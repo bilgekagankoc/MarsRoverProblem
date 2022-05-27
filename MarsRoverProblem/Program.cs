@@ -10,8 +10,7 @@ int c1;
 int c2;
 Start();
 void Start()
-    {
-
+{
     try
     {
         if (rectangleSize.Count == 0)
@@ -30,7 +29,6 @@ void Start()
     {
         Restart();
     }
-
 
     if (rectangleSize.Count > 0 && movementCode.Count > 0 && currentLocation.Count > 0)
     {

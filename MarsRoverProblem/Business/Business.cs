@@ -9,20 +9,22 @@ namespace MarsRoverProblem.Business
 {
     public interface BasePosition
     {
+        #region Methods
         void Turn90DegreesRight();
         void Turn90DegreesLeft();
         void Move();
-        void StartMove(LocationModel location, List<int> rectangleSize, List<char> movementCode);
+        void StartMove(LocationModel location, List<int> rectangleSize, List<char> movementCode); 
+        #endregion
     }
     public class Business : BasePosition
     {
+        #region Properties
         public LocationModel Location { get; set; }
         public List<int> RectangleSize { get; set; }
         public List<char> MovementCode { get; set; }
-        public Business()
-        {
-        }
+        #endregion
 
+        #region Methods
         public void Move()
         {
             switch (Location.Direction)
@@ -113,7 +115,8 @@ namespace MarsRoverProblem.Business
                     Console.WriteLine($"The character you entered is not valid");
                     break;
             }
-        }
+        } 
+        #endregion
     }
 
 }

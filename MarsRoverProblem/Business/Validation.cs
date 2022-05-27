@@ -8,15 +8,20 @@ namespace MarsRoverProblem.Business
 {
     public interface IValidation
     {
-        bool IsValid(List<int> area, List<char> moveCod, List<string> currentLocation);
+        #region Methods
+        bool IsValid(List<int> area, List<char> moveCod, List<string> currentLocation); 
+        #endregion
     }
     public class Validation : IValidation
     {
+        #region Properties
         public List<int> Area { get; set; }
         public List<char> MoveCode { get; set; }
         public List<string> CurrentLocation { get; set; }
         public bool Result { get; set; }
+        #endregion
 
+        #region Constructor
         public Validation(List<int> area, List<char> moveCode, List<string> currentLocation)
         {
             Area = area;
@@ -24,6 +29,9 @@ namespace MarsRoverProblem.Business
             CurrentLocation = currentLocation;
             Result = IsValid(area, moveCode, currentLocation);
         }
+        #endregion
+
+        #region Methods
         public bool IsValid(List<int> area, List<char> moveCode, List<string> currentLocation)
         {
             bool valid = true;
@@ -46,6 +54,7 @@ namespace MarsRoverProblem.Business
             if (Convert.ToInt32(currentLocation[1]) < 0 || Convert.ToInt32(currentLocation[1]) > area[1])
                 valid = false;
             return valid;
-        }
+        } 
+        #endregion
     }
 }
