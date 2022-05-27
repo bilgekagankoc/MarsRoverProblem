@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRoverProblem", "MarsRoverProblem\MarsRoverProblem.csproj", "{43979BE2-8FA1-417F-8246-06062A41CEF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43979BE2-8FA1-417F-8246-06062A41CEF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43979BE2-8FA1-417F-8246-06062A41CEF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43979BE2-8FA1-417F-8246-06062A41CEF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43979BE2-8FA1-417F-8246-06062A41CEF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CB9E769-64F0-4D1F-9018-233516F620F7}
+	EndGlobalSection
+EndGlobal
